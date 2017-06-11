@@ -1,0 +1,46 @@
+﻿<div>
+    <router-link to="/notfalls">Go back</router-link><br/>
+    <center ><strong>New Notfall</strong></center><br>
+    <table style="margin: auto;">
+        <tr><th></th><th align="center"></th></tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" v-model="NewNotfall_PatientName"/></td>
+        </tr>
+        <tr>
+            <td>Vorname</td>
+            <td><input type="text" v-model="NewNotfall_PatientVorname"/></td>
+        </tr>
+        <tr>
+            <td>Geburtsdatum</td>
+            <td><input type="date" v-model="NewNotfall_PatientGeburtsdatum" /></td>
+        </tr>
+        <tr>
+            <td>Datum der Reanimation</td>
+            <td><input  type="date" v-model="NewNotfall_PatientReanimationDate" /></td>
+        </tr>
+        <tr>
+            <td>Uhrzeit der Reanimation</td>
+            <td><input type="time" v-model="NewNotfall_PatientReanimationTime" /></td>
+        </tr>
+        <tr>
+            <td>Alter zum Zeitpunkt der Reanimation</td>
+            <td>wird berechnet</td>
+        </tr>
+        <tr>
+            <td>Geschlecht</td>
+            <td>
+                <select v-model="NewNotfall_PatientGender">
+                    <option disabled value="">---</option>
+                    <option value="1">M</option>
+                    <option value="0">F</option> 
+                </select>  
+                <br/>
+            </td>
+        </tr>
+    </table> 
+    <div style="text-align: center; ">
+        <input type="button" value="Speichern" v-on:click="GM().CreateNotfall()"/>
+        <router-link to="/notfalls">Go back</router-link><br />
+    </div>
+</div> 
