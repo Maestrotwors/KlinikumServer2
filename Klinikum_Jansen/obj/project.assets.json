@@ -8857,14 +8857,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Servers\\Jansen\\KlinikumServer\\Klinikum_Jansen\\Klinikum_Jansen.csproj",
+      "projectUniqueName": "c:\\Servers\\Jansen\\KlinikumServer2\\Klinikum_Jansen\\Klinikum_Jansen.csproj",
       "projectName": "Klinikum_Jansen",
-      "projectPath": "C:\\Servers\\Jansen\\KlinikumServer\\Klinikum_Jansen\\Klinikum_Jansen.csproj",
-      "outputPath": "C:\\Servers\\Jansen\\KlinikumServer\\Klinikum_Jansen\\obj\\",
+      "projectPath": "c:\\Servers\\Jansen\\KlinikumServer2\\Klinikum_Jansen\\Klinikum_Jansen.csproj",
+      "outputPath": "c:\\Servers\\Jansen\\KlinikumServer2\\Klinikum_Jansen\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "net462"
       ],
+      "files": {
+        "lib/net462/Klinikum_Jansen.dll": "c:\\Servers\\Jansen\\KlinikumServer2\\Klinikum_Jansen\\bin\\placeholder\\net462\\Klinikum_Jansen.dll"
+      },
       "frameworks": {
         "net462": {
           "projectReferences": {}
@@ -8874,6 +8877,10 @@
     "frameworks": {
       "net462": {
         "dependencies": {
+          "Microsoft.ApplicationInsights.AspNetCore": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
           "Microsoft.AspNetCore": {
             "target": "Package",
             "version": "1.1.1"
@@ -8881,10 +8888,6 @@
           "Microsoft.AspNetCore.Mvc": {
             "target": "Package",
             "version": "1.1.2"
-          },
-          "Microsoft.ApplicationInsights.AspNetCore": {
-            "target": "Package",
-            "version": "2.0.0"
           },
           "Microsoft.AspNetCore.StaticFiles": {
             "target": "Package",
